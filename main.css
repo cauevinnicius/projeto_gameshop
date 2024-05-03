@@ -198,7 +198,7 @@ footer p {
     .container {
         max-width: 90%;
     }
-    
+
     .consoles {
         display: block;
     }
@@ -209,6 +209,32 @@ footer p {
 
     header div.container {
         flex-direction: column;
+    }
+
+    header .container,
+    section .container,
+    section .container .contact-sections {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .consoles {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    header .container,
+    section .container,
+    section .container .contact-sections {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
